@@ -13,7 +13,6 @@ body{
     font-family: open;
     font-size: 14px;
     font-family: "Open Sans";
-    max-width: 1100px;
 }
 header{
     font-family: "Raleway";
@@ -66,11 +65,13 @@ header{
     width: 100%;
     font-size: .8rem;
     margin: 0 auto; 
+}
+.intro{
     background-image: url(images/bg-curvy-mobile.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 3.8em
+    padding: .4em;
 }
 .header__text{
     text-align: center;
@@ -138,6 +139,10 @@ header{
 .under{
     width: 50%;
     max-width: 150px;
+}
+.service__cont{
+    width: 90%;
+    margin: 1em auto;
 }
 .service__btn{
     align-items: center;
@@ -220,12 +225,21 @@ form{
     width: 90%;
     margin: 0 auto;
 }
-.form__in_out input,button{
+.form__in_out input{
     width: 100%;
+    outline: none;
     padding: .8em;
     margin: .6em auto;
     border: none;
     border-radius: 4em;
+}
+.form__in_out button{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 4em;
+    margin: .6em auto;
+    padding: .8em;
 }
 .error{
     color: hsl(0, 100%, 63%);
@@ -236,13 +250,14 @@ form{
     color:#fff ;
     cursor: pointer;
     font-weight: 700;
+    
 }
 .footer{
     background-color: hsl(216, 53%, 9%);
-    margin: -9em auto;
+    margin: -9em auto ;
 }
 .footer__con{
-    padding: 15em 1em  10em;
+    padding: 15em 1em  1em;
 }
 .footer__img{
     width: 50%;
@@ -273,11 +288,13 @@ form{
     padding: 0;
 }
 .footer__about ul li{
-    margin: 1em;
+    margin: 1em auto;
 }
 .first1 ,.first {
     margin-top: 2em;
     width: 30%;
+    align-items: start;
+    justify-content: start;
 }
 .first li:hover{
     font-weight: 600;
@@ -288,6 +305,9 @@ form{
 
 .footer__end{
     width: 100%;
+}
+.footer__container{
+    padding: 1em 2em;
 }
 .footer__end__img {
     margin: 2em auto;
@@ -304,4 +324,185 @@ form{
 }
 button:hover{
     background-color: hsl(198, 80%, 52%);
+}
+.attribution{
+    margin-top: em auto;
+}
+@media  only screen and (min-width:750px) {
+    .nav{
+        padding: 2em;
+        align-items: center;
+    }
+    .menu ul{
+        padding: 0;
+    }
+    .menu ul li{
+        font-size: 1.4rem;
+        font-weight: lighter;
+    }
+    .header__img{
+        width: 50%;
+    }
+    .header__title{
+        background-image: none;
+        width: 60%;
+        font-size: 1.4rem;
+        padding: 0;
+    }
+    .header__text{
+        width: 48%;
+        font-size: 1.5rem;
+    }
+    .header__btn{
+        width: 20%;
+        font-weight: 700;
+    }
+    .header__btn button{
+        width: 100%;
+        
+    }
+    .intro{
+        background-image: url(images/bg-curvy-desktop.svg);
+        padding: 5em;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card__section{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        padding: 2em 4em;
+        width: 80%;
+        margin: 2em auto;
+    }
+    .card{
+        width: 70%;
+        padding: 0;
+        margin: 2em auto;
+        gap: 100px;
+    }
+    .card:nth-child(2){
+        padding-bottom: 2em;
+    }
+    .card__img{
+        padding: .5em;
+        width: 20%;
+    }
+    .card__img img{
+        width: 100%;
+    }
+    .service__section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5em;
+    }
+    .service__img{
+        width: 80%;
+        margin: 3em;
+    }
+    .service__img img{
+        width: 100%;
+    }
+    .service__cont{
+        width: 60%;
+        margin: 0;
+    }
+    .service__header{
+        width: 60%;
+       margin: 0; 
+       margin-bottom: 1.2em;
+       font-size: 2rem;
+    }
+    .service__text{
+        font-size: 1rem;
+        width: 80%;
+        margin: 0;
+        margin-bottom: 1em;
+    }
+    .service__text2{
+        width: 90%;
+        margin: 0;
+        font-size: 1rem;
+        margin-bottom: 1em;
+    }
+    .under{
+        width: 30%;
+        transition: all 1s ease;
+    }
+    .under:hover{
+        border-bottom: #fff;
+    }
+    .under img{
+        width: 13%;
+    }
+    .under p:hover{
+        color: white;
+        border-bottom: 1px solid #fff;
+        transform: rotateX('21px');   
+    }
+    .blug__section{
+        display: flex;
+        padding: 2em;
+    }
+    .blug{
+        margin: 0 1.5em;
+    }
+    .quot{
+        margin: -2em 1em;
+    }
+    form{
+        width: 50%;
+    }
+    .form__in_out{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1em;
+    }
+    .form__in_out input{
+        width: 100%;
+    }
+    .input1{
+        width: 80%;
+        margin-bottom: 2em;
+    }
+    .div1{
+        width: 40%;
+        margin-bottom: 2em;
+    }
+    .footer__con{
+        width: 30%;
+    }
+    footer{
+        padding: 5em;
+    }
+    .footer__container{
+        display: flex;
+        padding: 0;
+    }
+    .footer__main{
+        width: 40%;
+    }
+    .footer__about{
+        display: flex;
+        margin: 0;
+        width: 30%;
+    }
+    .first, .first1{
+        margin: 0 2em;
+    }
+    .footer__con{
+        padding-top: 6em;
+    }
+    .footer__end{
+        width: 20%;
+        justify-content: start;
+    }
+    .footer__end__img{
+        margin: 0 2em;
+    }
+
 }
